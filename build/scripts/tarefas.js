@@ -1,0 +1,1 @@
+let somar=require("./sum");console.log("Resultado: ",somar(10,15));
