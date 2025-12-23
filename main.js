@@ -20,4 +20,8 @@ document.addEventListener('DOMContentLoaded', function() {
             profileFollowing.innerText = json.following
             profileLink.href = json.html_url
         })
+        .catch(function(error) {
+            alert('Houve um erro ao carregar as informações do perfil, tente novamente mais tarde.')
+            console.error('Error fetching GitHub profile:', error)
+        })
 })
